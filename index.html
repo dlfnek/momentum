@@ -6,16 +6,19 @@
     <!--인터넷 익스플로러와 같이 옛날 버전의 브라우저를 지원할 때 사용하는 태그-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Momentum</title>
 </head>
 
 <body>
-    <form id="login-form">
+    <form id="login-form" class="hidden">
         <input required maxlength="15" type="text" placeholder="What is yard name?" />
         <input type="submit" value="log In" />
     </form>
-    <script src="app.js"></script>
+    <h2 id="clock">00:00:00</h2>
+    <h1 id="greeting" class="hidden"></h1>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
 </body>
 
 </html>
